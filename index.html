@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Pantheon</title>
+  <title>Сайт проекта «Пантеон» - полёты на Марс</title>
 </head>
 <body>
   <header class="main-header">
@@ -16,7 +16,7 @@
       <p>Пантеон</p>
       <p>Олимп</p>
       <video poster="img/preview-1.jpg" width="2000" height="1000">
-        <source src="#" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
       </video>
       <button type="button">Смотреть видео</button>
       <p>Первый город на планете Марс недалеко от горы Олимп</p>
@@ -24,21 +24,21 @@
     <section class="facts">
       <h2 class="visually-hidden">Факты</h2>
       <dl class="facts-list">
-        <dt>четвёртая планета по удалённости от Солнца</dt>
-        <dd>4</dd>
-        <dt>седьмая по размерам планета Солнечной системы</dt>
-        <dd>7</dd>
-        <dt>массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</dt>
-        <dd>10,7%</dd>
-        <dt>спутника вместо Луны (как картошка, только больше)</dt>
-        <dd>2</dd>
-        <dt>высота самой высокой горы Марса</dt>
-        <dd>21 км</dd>
-        <dt>максимальная температура на поверхности</dt>
-        <dd>+20</dd>
+        <dt class="fact-name">четвёртая планета по удалённости от Солнца</dt>
+        <dd class="fact-text">4</dd>
+        <dt class="fact-name">седьмая по размерам планета Солнечной системы</dt>
+        <dd class="fact-text">7</dd>
+        <dt class="fact-name">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</dt>
+        <dd class="fact-text">10,7%</dd>
+        <dt class="fact-name">спутника вместо Луны (как картошка, только больше)</dt>
+        <dd class="fact-text">2</dd>
+        <dt class="fact-name">высота самой высокой горы Марса</dt>
+        <dd class="fact-text">21 км</dd>
+        <dt class="fact-name">максимальная температура на поверхности</dt>
+        <dd class="fact-text">+20</dd>
       </dl>
     </section>
-    <section class="mars">
+    <section class="info">
       <h2>Марс. Вспомнить всё</h2>
       <ul>
         <li>
@@ -54,11 +54,11 @@
           корабле 7-8 месяцев.</p>
         </li>
       </ul>
-      <img src="img/path.png" width="469" height="286" alt="Расстояние до Марса">
+      <img src="img/path.png" width="469" height="286" alt="Расстояние от Земли до Марса составляет 56 млн км или 7 месяцев на межпланетном корабле">
     </section>
-    <section class="idea">
+    <section class="implementation">
       <h2>От идеи до реализации</h2>
-      <section>
+      <section class="facts">
         <h3>Илон Маск. Гений или безумец?</h3>
         <p>Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com,
         позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты
@@ -70,25 +70,25 @@
         освоении Марса.</p>
         <img src="img/photo-1.jpg" width="325" height="373" alt="Илон Маск">
       </section>
-      <section class="cost-flight">
-        <h2>Стоимость перелёта</h2>
-        <img src="img/rocket.jpg" width="310" height="310" alt="Ракета">
+      <section class="cost">
+        <h3>Стоимость перелёта</h3>
+        <img src="img/rocket.jpg" width="310" height="310" alt="Взлёт межпланетного корабля">
         <p>Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что
-        составит 500 000 долларов на человека.</p>
-        <form id="request-form" action="#" method="POST">
-          <label for="request-form-cost">$500 k Имя</label>
-          <input type="text" name="request-form-cost" id="request-form-cost" placeholder="и ты на Марсе!">
+        составит <span>500 000 долларов</span> на человека.</p>
+        <form id="order-form" action="#" method="POST">
+          <span>$500 k</span>
+          <label for="order-form-astronaut-name" class="visually-hidden">Имя</label>
+          <input type="text" name="order-form-astronaut-name" id="order-form-astronaut-name" placeholder="и ты на Марсе!">
           <button type="submit">Я готов лететь</button>
         </form>
       </section>
     </section>
-    <section class="specifics-living">
+    <section class="pitfalls">
       <h2>Подводные камни в масштабах космоса</h2>
       <video poster="img/preview-2.jpg" width="1139" height="572">
-      <source src="#" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
       </video>
       <button type="button">Смотреть видео</button>
-      <br>
       <h3>Жить или выживать?</h3>
       <p>Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
       <p>Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная
@@ -99,9 +99,9 @@
     </section>
     <section class="life-in-colony">
       <h2>Организация жизни в колонии</h2>
-      <img src="img/onboarding.jpg" width="1140" height="529" alt="На борту жилых помещений">
+      <img src="img/onboarding.jpg" width="1140" height="529" alt="Жизнь в колонии">
       <p>В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50
-      м<sub>2</sub> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную
+      м<sup>2</sup> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную
       одежду. Весь комплекс соединен сетью ходов.</p>
       <a href="#">Подробнее</a>
     </section>
